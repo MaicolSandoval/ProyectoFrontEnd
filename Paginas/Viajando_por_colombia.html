@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!-- tenemos la informacion de la pagina -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viajando por Colombia</title>
@@ -9,30 +10,11 @@
 </head>
 
 <body>
+    <!-- Esta es la pagina principal desde aqui se llaman todas la opciones -->
+    <!-- se importa la hoja de estilos a utilizar -->
     <link href="./../Styles/styles.css" rel="stylesheet" />
-    <!-- <script>
-        function Inicio() {
-
-            var iframe = document.createElement("iframe")
-            iframe.src = "./Inicio.html"
-            document.getElementById("paginas").append(iframe)
-        }
-
-        function Nosotros() {
-
-            var iframe = document.createElement("iframe")
-            iframe.src = "./Nosotros.html"
-            document.getElementById("paginas").append(iframe)
-        }
-
-        function Experiencias() {
-
-            var iframe = document.createElement("iframe")
-            iframe.src = "./Experiencias.html"
-            document.getElementById("paginas").append(iframe)
-        }
-    </script> -->
     <div class="ContenedorPrincipal">
+        <!-- encabezado de la pagina -->
         <header>
             <div class="titulo">
                 <h2>Viajando por colombia</h2>
@@ -52,7 +34,7 @@
                 </div>
             </div>
         </header>
-
+        <!-- se utiliza la etiqueta section para separar header del body de la pagina esta parte contiene el menu superior-->
         <section>
             <nav>
                 <ul class="main-menu">
@@ -61,33 +43,14 @@
                     <li><a href="#" id="btnExperiencia">Experiencias</a></li>
                     <li><a href="#" id="btnPlanes">Planes</a></li>
                     <li><a href="#" id="btnOfertas">Ofertas</a></li>
-                    <!-- <li class="has-submenu">
-                        <a href="#">Productos</a>
-                        <ul class="submenu">
-                            <li><a href="#">Producto 1</a></li>
-                            <li><a href="#">Producto 2</a></li>
-                            
-                        </ul>
-                    </li> -->
                 </ul>
             </nav>
         </section>
+        <!-- en esta seccion encontramos el bloque donde se llamara el iframe creado con javaScript -->
         <section class="paginas" id="paginas">
-            <!-- <iframe src="./Nosotros.html"></iframe> -->
-            <!-- <div>
-                <img src="./../Imagenes/imagen1.jfif" alt="" height="200" width="350">
-                <img src="./../Imagenes/imagen2.jfif" alt="" height="200" width="350">
-                <img src="./../Imagenes/imagen3.jfif" alt="" height="200" width="350">
-            </div>
-            <div><img src="./../Imagenes/imagen4.jfif" alt="" height="200" width="350">
-                <img src="./../Imagenes/imagen5.jfif" alt="" height="200" width="350">
-                <img src="./../Imagenes/imagen6.jfif" alt="" height="200" width="350">
-            </div>
-            <div><img src="./../Imagenes/imagen7.jfif" alt="" height="200" width="350">
-                <img src="./../Imagenes/imagen8.jfif" alt="" height="200" width="350">
-                <img src="./../Imagenes/imagen9.jfif" alt="" height="200" width="350">
-            </div> -->
+
         </section>
+        <!-- Esta seccion nos contiene la informacion de la pagina que encontramos en el footer-->
         <footer class="flex-container">
             <div>
                 <h3>Contactanos</h3>
@@ -117,6 +80,7 @@
         </footer>
     </div>
 </body>
+<!-- por ultimo se llama el archivo externo javascript ya que se necesita en esta parte para que me cargue todas las funciones a utilizar  -->
 <script src="./../Main/main.js"></script>
 
 </html>
